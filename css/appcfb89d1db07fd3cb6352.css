@@ -1,0 +1,14 @@
+body {
+  background-color: #dedede !important;
+}
+/*
+:global(.ant-layout-sider-trigger) {
+  background-color: transparent !important;
+  color: @ant-blue !important;
+  border: 1px solid @ant-blue;
+}
+
+:global(.ant-layout-sider-children) {
+  background-color: transparent !important;
+}
+*/
