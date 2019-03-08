@@ -8,7 +8,17 @@
     />
     <meta name="theme-color" content="#000000" />
     <title>React App</title>
-  <link href="/css/runtime.app26415ab34ce483619c3c.css" rel="stylesheet"><link href="/css/app26415ab34ce483619c3c.css" rel="stylesheet"></head>
+  <link href="/css/runtime.appdb9f7f7f3b44f8fd2f91.css" rel="stylesheet"><link href="/css/appdb9f7f7f3b44f8fd2f91.css" rel="stylesheet"></head>
+  <script>
+      // 这段代码要放在其他js的前面
+      (function(){
+          var redirect = sessionStorage.redirect;
+          delete sessionStorage.redirect;
+          if (redirect && redirect != location.href) {
+              history.replaceState(null, null, redirect);
+          }
+      })();
+  </script>
   <body class="body">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
